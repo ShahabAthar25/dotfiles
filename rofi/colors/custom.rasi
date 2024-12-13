@@ -1,0 +1,16 @@
+/**
+ *
+ * Author : Shahab Athar
+ * Github : @ShahabAthar25
+ * 
+ * Colors
+ **/
+
+* {
+    background:     #101010;
+    background-alt: #252525;
+    foreground:     #FFFFFF;
+    selected:       #505050;
+    active:         #909090;
+    urgent:         #707070;
+}

@@ -1,0 +1,17 @@
+Code/
+dconf/
+fontforge/
+glib-2.0/
+gtk-3.0/
+gtk-4.0/
+htop/
+menus/
+procps/
+pulse/
+rofi.shahab/
+systemd/
+transmission/
+yay/
+pavucontrol.ini
+user-dirs.dirs
+user-dirs.locale
