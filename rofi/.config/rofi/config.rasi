@@ -1,0 +1,5 @@
+configuration {
+  show-icons:         true;
+}
+
+@theme "/home/shahab/.local/share/rofi/themes/rounded-nord-dark.rasi"
