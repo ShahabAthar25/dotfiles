@@ -129,6 +129,10 @@ window#waybar.empty #window {
   margin-right: 8px;
 }
 
+#custom-notification {
+  margin-left: 8px;
+}
+
 #custom-idle-indicator,
 #custom-notification-silencing-indicator {
   margin-right: 2px;
@@ -186,6 +190,10 @@ tooltip label {
 #custom-omarchy {
   margin-left: 8px;
   margin-right: 4px;
+}
+
+#custom-media {
+  margin-right: 8px;
 }
 
 #custom-media .media-text {
