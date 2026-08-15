@@ -5,7 +5,7 @@ wifi_names=$(iwctl station wlan0 get-networks | sed '1,4d; s/[[0-9;]*m//g; s/^[[
 
 
 # Show menu in Rofi
-selected_wifi=$(echo "$wifi_names" | rofi -dmenu -i -p "Select Wifi")
+selected_wifi=$(echo "$wifi_names" | rofi -dmenu -i -p "Select Wifi" -theme "~/.config/rofi/menu.rasi")
 
 # Connect if a network was selected
 if [[ -n "$selected_wifi" ]]; then

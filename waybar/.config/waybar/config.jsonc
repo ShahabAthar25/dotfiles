@@ -127,7 +127,7 @@
     "tooltip-format-disconnected": "Disconnected",
     "interval": 3,
     "spacing": 1,
-    "on-click": "/home/shahab/.config/rofi/scripts/wifi.sh",
+    "on-click": "$HOME/.config/scripts/wifi.sh",
   },
 
   "battery": {
@@ -156,7 +156,7 @@
     "format-connected": "<span></span>",
     "format-no-controller": "<span>󰂯</span>",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "/home/shahab/.config/waybar/bluetooth.sh",
+    "on-click": "$HOME/.config/scripts/bluetooth.sh",
   },
 
   "pulseaudio": {

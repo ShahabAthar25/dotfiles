@@ -1,8 +1,3 @@
--- Disable Smooth Scroll
-vim.opt.smoothscroll = false
-vim.opt.ttyfast = true
-vim.opt.lazyredraw = true
-
 -- Setting leaders for vim
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
