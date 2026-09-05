@@ -78,28 +78,27 @@
     },
     "backlight": {
       "label": "󰃠 ",
-      "device": "amdgpu_bl1",
       "subsystem": "backlight",
-      "min": 10
+      "min": 1
     },
     "buttons-grid": {
       "actions": [
         {
           "label": "",
-          "command": "amixer set Master toggle",
+          "command": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
           "name": "btn-audio"
         },
         {
           "label": "",
-          "command": "amixer set Capture toggle"
+          "command": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
         },
         {
           "label": " ",
-          "command": "swaync-client -t -sw; ~/.config/rofi/launchers/wifi.sh"
+          "command": "swaync-client -t -sw; $HOME/.config/scripts/wifi.sh"
         },
         {
           "label": "󰂯",
-          "command": "swaync-client -t -sw; ~/.config/rofi/launchers/rofi-bluetooth"
+          "command": "swaync-client -t -sw; $HOME/.config/scripts/bluetooth.sh"
         },
         {
           "label": "󰏘",
@@ -112,7 +111,7 @@
         },
         {
           "label": " ",
-          "command": "swaync-client -t -sw; ~/.config/rofi/launchers/screenshot.sh"
+          "command": "swaync-client -t -sw; $HOME/.config/scripts/capture-menu.sh"
         },
         {
           "label": "",

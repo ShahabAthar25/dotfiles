@@ -1,20 +1,4 @@
 #!/usr/bin/env bash
-#             __ _       _     _            _              _   _
-#  _ __ ___  / _(_)     | |__ | |_   _  ___| |_ ___   ___ | |_| |__
-# | '__/ _ \| |_| |_____| '_ \| | | | |/ _ \ __/ _ \ / _ \| __| '_ \
-# | | | (_) |  _| |_____| |_) | | |_| |  __/ || (_) | (_) | |_| | | |
-# |_|  \___/|_| |_|     |_.__/|_|\__,_|\___|\__\___/ \___/ \__|_| |_|
-#
-# Author: Nick Clyde (clydedroid)
-#
-# A script that generates a rofi menu that uses bluetoothctl to
-# connect to bluetooth devices and display status info.
-#
-# Inspired by networkmanager-dmenu (https://github.com/firecat53/networkmanager-dmenu)
-# Thanks to x70b1 (https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/system-bluetooth-bluetoothctl)
-#
-# Depends on:
-#   Arch repositories: rofi, bluez-utils (contains bluetoothctl), bc
 
 # Constants
 divider="---------"
@@ -61,7 +45,7 @@ toggle_scan() {
         bluetoothctl scan off
         show_menu
     else
-        bluetoothctl --timeout 5 scan on
+        bluetoothctl --timeout 3 scan on
         echo "Scanning..."
         show_menu
     fi
@@ -304,7 +288,7 @@ show_menu() {
 }
 
 # Rofi command to pipe into, can add any options here
-rofi_command="rofi -dmenu $* -p -theme $HOME/.config/rofi/menu.rasi"
+rofi_command="rofi -dmenu $* -p Bluetooth -theme $HOME/.config/rofi/menu.rasi"
 
 case "$1" in
     --status)
