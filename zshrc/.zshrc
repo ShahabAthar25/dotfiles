@@ -4,6 +4,8 @@ export TERM='xterm-256color'
 export EDITOR='nvim'
 export VISUAL='nvim'
 export SUDO_EDITOR="nvim"
+export MOZ_ENABLE_WAYLAND=1
+export MOZ_WIDGET_TRANSPARENT=1
 
 # export NVM_DIR="$HOME/.config/nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
@@ -69,6 +71,8 @@ zstyle ':completion:*' list-colors '${(s.:.)LS_COLORS}'
 alias ls="ls --color"
 alias vim=nvim
 alias activate='source $(poetry env info --path)/bin/activate'
+alias dotfiles="cd $HOME/dotfiles"
+
 alias celar='clear'
 
 # pnpm

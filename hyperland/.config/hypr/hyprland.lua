@@ -63,6 +63,8 @@ hl.env("HYPRCURSOR_SIZE", "24")
 ---- LOOK AND FEEL ----
 -----------------------
 
+windowrulev2 = "opacity 0.85 0.85, class:^(firefox)$"
+
 hl.config({
   misc = {
     disable_hyprland_logo = true,
